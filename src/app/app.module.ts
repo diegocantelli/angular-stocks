@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { SummaryComponent } from './components/summary/summary.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { ManageComponent } from './components/manage/manage.component';
+import { AppRoutes } from './app.routes';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { ManageComponent } from './components/manage/manage.component';
   imports: [
     BrowserModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    AppRoutes
   ],
   providers: [],
   bootstrap: [AppComponent]
