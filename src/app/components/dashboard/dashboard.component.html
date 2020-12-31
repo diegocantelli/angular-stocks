@@ -3,8 +3,9 @@
    center;">
     Loading
   </div>
-  <div class="mdl-cell mdl-cell--3-col" *ngFor="let stock of stocks">
+  <div class="mdl-cell mdl-cell--3-col" *ngFor="let stock of stocks; index as i">
     <!-- cardHover -> definindo a diretiva no componente summary -->
-    <app-summary [stock]="stock" cardHover></app-summary>
+    <!-- *delay -> trata-se de uma diretiva estrutura -->
+    <app-summary [stock]="stock" *delay="i * 200" cardHover></app-summary>
   </div>
 </div>
