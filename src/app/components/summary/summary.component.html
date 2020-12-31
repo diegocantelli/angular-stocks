@@ -4,7 +4,9 @@
       <h4 style="color: #fff; margin: 0">
         {{stock?.symbol?.toUpperCase()}}<br />
         {{stock?.lastTradePriceOnly | currency:'USD':'symbol':'.2'}}<br />
-        {{stock?.change | currency:'USD':'symbol':'.2'}} ({{stock?.
+        <!-- desta forma o valor não será exibido em percentual -->
+        <!-- {{stock | change:false}} -->
+        {{stock | change}} ({{stock?.
                     changeInPercent | percent:'.2'}})
       </h4>
     </div>
