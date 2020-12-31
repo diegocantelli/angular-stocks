@@ -9,6 +9,7 @@ import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { ManageComponent } from './components/manage/manage.component';
 import { AppRoutes } from './app.routes';
 import { CardTypeDirective } from './directives/card-type.directive';
+import { CardHoverDirective } from './directives/card-hover.directive';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { CardTypeDirective } from './directives/card-type.directive';
     SummaryComponent,
     DashboardComponent,
     ManageComponent,
-    CardTypeDirective
+    CardTypeDirective,
+    CardHoverDirective
   ],
   imports: [
     BrowserModule,

@@ -4,6 +4,7 @@
     Loading
   </div>
   <div class="mdl-cell mdl-cell--3-col" *ngFor="let stock of stocks">
-    <app-summary [stock]="stock"></app-summary>
+    <!-- cardHover -> definindo a diretiva no componente summary -->
+    <app-summary [stock]="stock" cardHover></app-summary>
   </div>
 </div>
